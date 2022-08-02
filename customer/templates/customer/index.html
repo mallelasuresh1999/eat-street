@@ -1,0 +1,142 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+<head>
+    <style>
+        .para-index{
+            text-align: center;
+            text-shadow: 1px 0px;
+            color: rgb(75, 80, 83);
+        }
+        .index-para{
+            text-align: center;
+            text-shadow: 0.5px 0px;
+            color:rgb(29, 9, 92);
+            font-weight: 400;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: underline;
+            font-style: oblique;
+        }
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    </style>
+    </head>
+<div  style="background-image:url(//www.html.am/images/image-codes/milford_sound_t.jpg);width:100%;height:1000px;color:black;font-size:18px;background-repeat: no-repeat; background-size:cover;">
+    
+<marquee behavior="alternate">Place Your Favorite Food...</marquee>
+<div style="text-align: center;">
+    <a href="https://www.freeiconspng.com/img/2947" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/food-png-6.png" width="80" alt="Food Transparent PNG" /></a>
+    <h1>Eat-StreeT</h1>
+</div>
+
+<hr><br>
+
+
+
+<p class="para-index">“Food is symbolic of love when words are inadequate.”</p>
+<p class="para-index">The world's farmers produce enough food to feed 1.5x the global population. That's enough to feed 10 billion . Despite this excess, hunger still exists.</p>
+<p class="para-index">“Food for us comes from our relatives,  whether they have roots.  That is how we consider food. Food has a culture. It has a history. It has a story.It has relationships.”</p>
+<br>
+<p class="index-para">For More Information Click on Below Toggles...!</p>
+<p style="text-align: center;">
+    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Payment</a>
+    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Follow Us</button>
+    <button class="btn btn-success" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Overview</button>
+    <div style="text-align: center;">
+        <a href="{% url 'blog' %}" class="btn btn-outline-dark">Blog</a>
+        </div>
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample1">
+        <div class="card card-body">
+            Yes, you can order food with PayPal if you add your PayPal account 
+            to Google Pay. You can then order food with PayPal at
+             restaurants that accept online pay as a payment method.
+            <img src="https://res.cloudinary.com/dxqvnb6kz/image/upload/v1658909277/cards_gogq18.png"/>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+            <img src="https://images01.nicepage.com/page/42/43/website-design-preview-42438.webp" height="190px"/>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div style="text-align: center;">
+    <a href="{% url 'order' %}" class="btn btn-danger">Order Now!</a>
+    </div>
+    
+    <hr>
+
+    <h2 style="text-align: center; font-weight: bold;">Gallery</h2>
+    <div class="gallery">
+        
+        <a target="_blank" href="https://img.freepik.com/free-photo/restaurant-interior_1127-3394.jpg?t=st=1658819324~exp=1658819924~hmac=be669cd1604ba2adb95b4e1b5352f1d9cff2984079f8b85478c65461090e60b7&w=996">
+          <img src="https://img.freepik.com/free-photo/restaurant-interior_1127-3394.jpg?t=st=1658819324~exp=1658819924~hmac=be669cd1604ba2adb95b4e1b5352f1d9cff2984079f8b85478c65461090e60b7&w=996" alt="Cinque Terre" width="600" height="400">
+        </a>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="https://img.freepik.com/free-photo/young-woman-eating-pasta-cafe_1303-25262.jpg?t=st=1658819324~exp=1658819924~hmac=394789addc39345f7dd62b865dde38e94f7c0ba2e2a30e3ae8a7ab7c34b5d6ed&w=996">
+          <img src="https://img.freepik.com/free-photo/young-woman-eating-pasta-cafe_1303-25262.jpg?t=st=1658819324~exp=1658819924~hmac=394789addc39345f7dd62b865dde38e94f7c0ba2e2a30e3ae8a7ab7c34b5d6ed&w=996" alt="Forest" width="600" height="400">
+        </a>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="https://img.freepik.com/premium-photo/cozy-restaurant-with-people-waiter_175935-230.jpg?w=996">
+          <img src="https://img.freepik.com/premium-photo/cozy-restaurant-with-people-waiter_175935-230.jpg?w=996" alt="Northern Lights" width="600" height="400">
+        </a>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="https://img.freepik.com/premium-photo/set-burgers-with-beef-tomatoes-cheese-onions-salad-street-food-top-view-black-stone-background_187166-4137.jpg?w=996">
+          <img src="https://img.freepik.com/premium-photo/set-burgers-with-beef-tomatoes-cheese-onions-salad-street-food-top-view-black-stone-background_187166-4137.jpg?w=996" alt="Mountains" width="600" height="400">
+        </a>
+      </div>
+      
+      <div id="gallery" class="gallery">
+        <a target="_blank" href="https://img.freepik.com/free-photo/flat-lay-burger-wooden-board-with-beer_23-2148238489.jpg?t=st=1658817757~exp=1658818357~hmac=b83e8bf60b649f35c4c7b599dc68a4e0fd5b8c6d0c3bc850c5b05c81c0269e11&w=996">
+          <img src="https://img.freepik.com/free-photo/flat-lay-burger-wooden-board-with-beer_23-2148238489.jpg?t=st=1658817757~exp=1658818357~hmac=b83e8bf60b649f35c4c7b599dc68a4e0fd5b8c6d0c3bc850c5b05c81c0269e11&w=996" alt="Forest" width="600" height="420">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="https://img.freepik.com/premium-photo/overhead-indian-traditional-dishes-appetizers-chicken-curry-pilaf-naan-bread-samosas-paneer-chutney-rustic-background-table-with-choice-food-indian-cuisine-space-text_92134-1147.jpg?w=900">
+          <img src="https://img.freepik.com/premium-photo/overhead-indian-traditional-dishes-appetizers-chicken-curry-pilaf-naan-bread-samosas-paneer-chutney-rustic-background-table-with-choice-food-indian-cuisine-space-text_92134-1147.jpg?w=900" alt="Forest" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="https://img.freepik.com/premium-photo/luxury-tableware-beautiful-table-setting-restaurant_73492-239.jpg?w=996">
+          <img src="https://img.freepik.com/premium-photo/luxury-tableware-beautiful-table-setting-restaurant_73492-239.jpg?w=996" alt="Forest" width="700" height="400">
+        </a>
+      </div>
+      
+       
+    <marquee behavior="alternate">
+        <img src="https://www.freeiconspng.com/uploads/food-icon-7.png" width="150" height="108" alt="Cup of coffee on saucer">
+        </marquee>
+</div>
+
+{% endblock content %}

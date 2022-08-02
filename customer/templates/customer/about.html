@@ -1,0 +1,103 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+<head>
+    <style>
+        .header-tag{
+  color:rgb(188, 11, 82);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.about {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-image: url("https://img.freepik.com/free-vector/gray-abstract-wireframe-background_53876-99911.jpg?t=st=1656943670~exp=1656944270~hmac=14e5f17fea041285f7eb3b66eec3b9ec2ff9e73f27227eb1a61091bfcdcd9b5f&w=996");
+  }
+  .aboutBottom {
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .aboutBottom p {
+    width: 1200px;
+    color: rgb(53, 32, 5);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .about .aboutBottom h1 {
+    font-weight: 400;
+    font-size: 70px;
+    color: rgb(237, 103, 103);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-40px);
+    
+  }
+
+  
+  
+  .footer-section-text {
+    color: #040810;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 23px;
+    
+  }
+  .about-image{
+    border-radius: 50px;
+    background-size: cover;
+    height:fit-content;
+    width: 650px;
+
+  }
+
+    </style>
+</head>
+
+
+<div class="about">
+
+<div class="container  mb-5">
+    <div class="row justify-content-center mt-2 ">
+        <div class="col-md-8 col-sm-12 offset-md-1 p-3 text-center">
+            <h1 class="header-tag">ABOUT US</h1>
+            <h1 class="footer-section-text">Eat Street</h1>
+        </div>
+        <img class="about-image" src="https://res.cloudinary.com/dxqvnb6kz/image/upload/v1658630485/logo_jbanq8.png" alt="about-image"/>
+    </div>
+    <div class="row justify-content-center mt-1">
+        <div class="col-md-10 col-sm-12 offset-md-1 p-5 aboutBottom text-center">
+        <p>Food is what people and animals eat to live. 
+        Every organism needs energy to carry on with 
+        the process of living which comes from food. 
+        Food usually comes from animals and plants. 
+        It is eaten by living things to provide energy and nutrition.
+        Food contains the nutrition that people and animals need to be healthy. 
+        The consumption of food is normally enjoyable to humans.
+        Food produced by farmers or gardeners can be changed by 
+        industrial processes (the food industry). 
+        Processed food usually contains several natural 
+        ingredients and food additives (such as preservatives, antioxidants, emulsifiers, flavor enhancers). 
+        For example, bread is processed food.   
+    </p>
+    <p class="footer-section-address">
+        TechM Team, Our Food, Eat Street, India.
+</p>
+    </div>
+    </div>
+</div>
+</div>
+<a href="{% url 'index' %}">
+  <button class="custom-button" >BACK</button>
+</a><br>
+{% endblock content %}

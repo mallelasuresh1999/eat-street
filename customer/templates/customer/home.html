@@ -1,0 +1,85 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+
+<head>
+  <style>
+    .home{
+      background-image: url("https://img.freepik.com/free-photo/restaurant_23-2148014999.jpg?w=996");
+    }
+    .eat-header{
+      color: #00b8d0;
+      font-weight: 400;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: italic;
+    }
+    
+    .banner-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 45px;
+    font-weight: 400;
+  }
+  .banner-caption {
+    color: #f5f7fa;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .banner-para-quote{
+    font-style: italic;
+    color: #e7e1e4b1;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .custom-button {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(#42d000, #a58d00);
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  .custom-outline-button {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(#00b8d0, #a58d00);
+    width: 130px;
+    height: 45px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d0b200;
+    border-radius: 8px;
+  }
+  </style>
+</head>
+<body class="home">
+<div class="container mb-5">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center">
+            <h1 class="eat-header">EAT STREET</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-1">
+        <div class="col-md-10 col-sm-12 offset-md-1 p-4 text-center">
+          <h1 class="banner-heading mb-3">Enjoy Your Food in Town</h1>
+          <p class="banner-caption mb-4">After a good dinner one can forgive anybody, even one's own relations.</p>
+          <p class="banner-caption mb-4">Good Food & Good Mood</p>
+          <Link to="/menu">
+          
+            <a href="{% url 'menu' %}">
+              <button class="custom-button" >View Menu</button>
+            </a>
+            <a href="{% url 'order' %}">
+              <button class="custom-outline-button" >Order Now</button>
+            </a>
+          </Link>
+          
+          <p class="banner-para-quote mt-4">"You don't need silver fork to eat good food"</p>      
+          </div>
+    </div>
+</div>
+</body>
+{% endblock content %}
